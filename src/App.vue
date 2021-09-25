@@ -1,32 +1,41 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app>
+    <v-app-bar app color="grey lighten-4" absolute elevate-on-scroll scroll-target="#scrolling-techniques-7">
+      <div class="d-flex align-center">
+        <v-toolbar-title>
+          <h1 class="my-3">Mama<span class="font-weight-bold text-h3">Pancha</span></h1>
+        </v-toolbar-title>
+      </div>
+      <v-spacer></v-spacer>
+
+      <router-link class="text-decoration-none" to="/">
+        <v-btn class="mx-4 mt-2 text-center text-button" depressed plain> Productos </v-btn></router-link>
+      <router-link class="text-decoration-none" to="/recomendados">
+        <v-btn class="mx-4 mt-2 text-center text-button" depressed plain> Recomendados </v-btn></router-link>
+      <router-link plain class="text-decoration-none" to="/contacto">
+        <v-btn class="mx-4 mt-2 text-center text-button" depressed  plain> Contacto </v-btn></router-link>
+      <router-link class="text-decoration-none" to="/login">
+        <v-btn class="mx-4 mt-2 text-center text-button" depressed plain> Login </v-btn></router-link>    
+    </v-app-bar>
+
+    <v-main>
+      <router-view/>
+    </v-main>
+  </v-app>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+export default {
+  name: 'App',
+  data: () => ({
+    //
+  }),
+};
+</script>
+<style>
+  h1 {
+    font-family: 'Brush Script MT', cursiva;
+    font-size: 3rem;
   }
-}
 </style>
