@@ -11,8 +11,8 @@
                 </v-form>
             </v-card-text>
             <v-card-actions class="d-flex justify-center">
-                <v-btn color="#00BFA5" text @click="login">Ingresar</v-btn>
-                <v-btn color="#00BFA5" text @click="cancelar">Cancelar</v-btn>
+                <v-btn class="text-subtitle-1 font-weight-bold" color="#00BFA5" text @click="login">Ingresar</v-btn>
+                <v-btn class="text-subtitle-1 font-weight-bold" color="#00BFA5" text @click="cancelar">Cancelar</v-btn>
             </v-card-actions>
         </v-card>
     </div>
@@ -33,7 +33,7 @@ export default {
         },
         login(){
             console.log("Verificando credenciales");
-            this.$router.push('/Contacto')
+            this.$router.push('/CRUD')
         }
     }
 }
