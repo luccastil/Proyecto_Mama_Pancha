@@ -11,11 +11,11 @@
                 </v-form>
             </v-card-text>
             <v-card-actions class="d-flex justify-center">
-                <v-btn class="text-subtitle-1 font-weight-bold" color="#00BFA5" text @click="login">Ingresar</v-btn>
-                <v-btn class="text-subtitle-1 font-weight-bold" color="#00BFA5" text @click="cancelar">Cancelar</v-btn>
+                <v-btn class="text-subtitle-1 font-weight-medium" color="#00BFA5" text @click="login">Ingresar</v-btn>
+                <v-btn class="text-subtitle-1 font-weight-medium" color="#00BFA5" text @click="cancelar">Cancelar</v-btn>
             </v-card-actions>
         </v-card>
-    </div>
+    </div>   
 </template>
 
 <script>

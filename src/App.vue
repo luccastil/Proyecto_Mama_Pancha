@@ -3,7 +3,7 @@
     <v-app-bar app color="grey lighten-4" absolute elevate-on-scroll scroll-target="#scrolling-techniques-7">
       <div class="d-flex align-center">
         <v-toolbar-title>
-          <h1 class="my-3">Mama<span class="font-weight-bold text-h3">Pancha</span></h1>
+          <h1 class="my-3">Mama<span class="font-weight-medium text-h3">Pancha</span></h1>
         </v-toolbar-title>
       </div>
       <v-spacer></v-spacer>
